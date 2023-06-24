@@ -31,22 +31,9 @@
     
          <div class="container col-3">
         
-        <h1>Register</h1>
-        <form  action="" method="POST"  class="col-11">
-             {% csrf_token %}
-          <div class="fields">
-              <div class="input-field">
-                  <label>Name of the Team</label>
-                  <input type="text" name="teamname"  placeholder="Enter your Team Name" required>
-              </div>
-         </div>
-
-            <div class="fields">
-                <div class="input-field">
-                    <label>Phone Number</label>
-                    <input type="text" name="phone" placeholder="Enter your Phone Number" required>
-                </div> 
-            </div>
+        <h1>Login</h1>
+        <form  action="#" method="POST"  class="col-11">
+            {% csrf_token %} 
             <div class="fields">
                 <div class="input-field">
                     <label>E-mail</label>
@@ -59,9 +46,9 @@
                     <input type="text" name="password" placeholder="Enter your Password" required>
                 </div> 
             </div>
+             <button class="btncont-que" type="submit"><b>Login</b></button><b>
+            Does'nt  have an account <a href="{% url 'signup' %}"> Register </a>
             
-             <button class="btncont-que" type="submit"><b>Register</b></button><b>
-             Already an account? <a href=""> Login </a>
         </form>
     
         </div>    
