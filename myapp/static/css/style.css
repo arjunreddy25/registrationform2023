@@ -1,0 +1,170 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+   box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assests/Copy\ of\ Empresario\ bg\ 2.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    font-family:  'Poppins', sans-serif;
+    overflow: hidden;
+
+}
+.logo img{
+    position: absolute;
+     top: 2vh;
+     left: 1vw;
+     width: 261px;
+     height: 57px;
+     object-fit: cover;
+     
+   }
+   .logo2 img{
+    position: absolute;
+     top: 2vh;
+     left: 20vw;
+     width: 176px;
+     height: 69px;
+       
+  
+   }
+   
+  
+   .container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 5px 10px rgba(124, 124, 124, 0.1);
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    color: #fff;
+    margin-left: 78vh;
+   
+
+
+    
+}
+.container h1{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 1.5rem;
+
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+    color: #fff;
+    
+}
+.container form .input-field{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.container form .input-field label{
+    font-size: 13px;
+}
+.container form .fields input, .container form .fields select{
+    padding: 0.8rem;
+    border-radius: 7px;
+    border: none;
+    box-shadow: none;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    
+
+}
+.container form .fields input::placeholder{
+    color: #fff;
+    opacity: 0.6;
+}
+.container form .fields input:focus{
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.container form .fields select{
+    color: #00000079;
+}
+
+.fields, .inputfield, input{
+    width: 100%;
+}
+.input-field select{
+    cursor: pointer;
+}
+
+.btncont-que{
+    width: 100%;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.8rem 0;
+    border-radius: 7px;
+    background-color: #B5E156;
+    border: none;
+    box-shadow: none;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.about-empresario,
+.empresario-is-the,
+.submit-wrapper {
+  position: absolute;
+  color: var(--color-black);
+}
+.empresario-is-the {
+  top: 19.69rem;
+  left: 6.25rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 38.75rem;
+}
+.about-empresario {
+  top: 15rem;
+  left: 6.38rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
