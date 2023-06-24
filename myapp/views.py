@@ -6,21 +6,22 @@ from django.contrib.auth import authenticate
 # Create your views here.
 def Signup(request):
     if request.method== 'POST':
-        teamname = request.POST('teamname')
-        phone = request.POST('phone')
-        email = request.POST('email')
-        password = request.POST('password')
+        teamname = request.POST.get('teamname')
+        phone = request.POST.get('phone')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
         
-        data = User.objects.create_user(teamname,phone,email,password)
-        data.save()
+        my_user = User.objects.create_user(teamname=teamname,phone=phone,email=email,password=password)
+        my_user.save()
         return redirect('login')
+      
 
     return render(request,'signup.html')
  
 def Login(request):
     if request.method=='POST':
-        email = request.POST('email')
-        password = request.POST('password')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
         user =authenticate(request,email=email,password=password)
         
         if user is not None:
