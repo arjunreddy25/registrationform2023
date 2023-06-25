@@ -24,10 +24,10 @@ def Login(request):
     if request.method=='POST':
         email = request.POST.get('email')
         password = request.POST.get('password')
-        user =authenticate(request,email,password)
+        CustomUser =authenticate(request,email=email,password=password)
         
-        if user is not None:
-            Login(request,user)
+        if CustomUser is not None:
+            Login(request,CustomUser)
             return redirect('next')
 
     return render(request,'login.html')
