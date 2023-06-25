@@ -30,5 +30,6 @@ def Login(request):
             Login(request,CustomUser)
             return redirect('next')
 
+
     return render(request,'login.html')
 
